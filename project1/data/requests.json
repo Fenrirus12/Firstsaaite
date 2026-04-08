@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "createdAt": "2026-04-08T05:47:00.771839+00:00",
+    "name": "Toorif",
+    "contact": "artur.bykov.00@gmail.com",
+    "taskType": "Оригинальность",
+    "deadline": "до 15 апреля",
+    "details": "ыввавпролрбьт паорпртпа пальоапра"
+  },
+  {
+    "id": 2,
+    "createdAt": "2026-04-08T05:47:11.209307+00:00",
+    "name": "Артур",
+    "contact": "artur.bykov.00@gmail.com",
+    "taskType": "Курсовая",
+    "deadline": "до 15 апреля",
+    "details": "фВаропртипауеп ркввпрвоа рпиыава"
+  }
+]
