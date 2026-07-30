@@ -751,8 +751,10 @@ def run() -> None:
     host = "0.0.0.0"
     port = int(os.getenv("PORT", "8000"))
     server = ThreadingHTTPServer((host, port), create_handler(app))
-    print(f"Server running on http://{host}:{port}")
-    print(f"Admin panel: http://{host}:{port}/admin")
+    local_url = f"http://127.0.0.1:{port}"
+    print(f"Server running on {local_url}")
+    print(f"Admin panel: {local_url}/admin")
+    print(f"Network bind address: http://{host}:{port}")
     print("Set ADMIN_USERNAME and ADMIN_PASSWORD to change admin credentials.")
     try:
         server.serve_forever()

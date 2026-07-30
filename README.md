@@ -1,8 +1,18 @@
-# Prose Atelier
+# Help-student
 
 Похожий на `proseprincess.ru` лендинг для услуг по подготовке учебных работ.
 
 ## Запуск
+
+На Windows можно запустить сайт двойным кликом по файлу:
+
+```bat
+start_site.bat
+```
+
+Он откроет сайт в браузере по адресу `http://127.0.0.1:8000`.
+
+Также можно запустить вручную:
 
 ```bash
 python server.py
@@ -24,6 +34,27 @@ $env:ADMIN_USERNAME="your-login"
 $env:ADMIN_PASSWORD="strong-password"
 python server.py
 ```
+
+## Деплой
+
+Проект готов к деплою на платформах, которые запускают Python-приложения через `Procfile`.
+
+1. Загрузите папку проекта в GitHub-репозиторий.
+2. На хостинге создайте новый проект из этого репозитория.
+3. Укажите переменные окружения:
+
+```bash
+ADMIN_USERNAME=your-login
+ADMIN_PASSWORD=strong-password
+```
+
+4. Команда запуска уже описана в `Procfile`:
+
+```bash
+web: python server.py
+```
+
+Сервер автоматически слушает порт из переменной `PORT`, которую обычно выдаёт хостинг.
 
 ## Что внутри
 
